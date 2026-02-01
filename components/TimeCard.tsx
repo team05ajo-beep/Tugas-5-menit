@@ -4,11 +4,11 @@ import { TimeDisplayProps } from '../types';
 
 const TimeCard: React.FC<TimeDisplayProps> = ({ label, time, isActive = false }) => {
   return (
-    <div className="flex flex-col items-center justify-center p-8 rounded-[2.5rem] bg-white/10 backdrop-blur-2xl border border-white/20 shadow-[0_25px_60px_rgba(0,0,0,0.4)] min-w-[160px] md:min-w-[220px] relative overflow-hidden group transition-all duration-500 hover:border-[#d4af37] hover:bg-white/20">
-      <span className="text-[11px] md:text-[13px] tracking-[0.2em] font-black text-white/60 mb-6 uppercase">
+    <div className="flex flex-col items-center justify-center p-4 md:p-6 rounded-[1.5rem] md:rounded-[2rem] bg-white/10 backdrop-blur-2xl border border-white/20 shadow-[0_20px_50px_rgba(0,0,0,0.4)] min-w-[130px] md:min-w-[180px] relative overflow-hidden group transition-all duration-500 hover:border-[#d4af37] hover:bg-white/20">
+      <span className="text-[9px] md:text-[11px] tracking-[0.2em] font-black text-white/60 mb-3 md:mb-4 uppercase">
         {label}
       </span>
-      <span className="text-5xl md:text-7xl font-black tracking-tighter gold-text gold-glow transition-transform duration-700 group-hover:scale-110 drop-shadow-[0_4px_8px_rgba(0,0,0,0.5)]">
+      <span className="text-4xl md:text-6xl font-black tracking-tighter text-white transition-transform duration-700 group-hover:scale-105 drop-shadow-[0_4px_12px_rgba(255,255,255,0.3)]">
         {time}
       </span>
       
