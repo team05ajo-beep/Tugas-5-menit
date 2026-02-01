@@ -36,19 +36,7 @@
             border-style: solid;
             border-radius: 4px;
         }
-        .corner-accent::after {
-            content: '';
-            position: absolute;
-            width: 8px;
-            height: 8px;
-            background: #d4af37;
-            border-radius: 1px;
-            opacity: 0.6;
-        }
-        .top-8.left-8.corner-accent::after { top: -4px; left: -4px; }
-        .top-8.right-8.corner-accent::after { top: -4px; right: -4px; }
-        .bottom-8.left-8.corner-accent::after { bottom: -4px; left: -4px; }
-        .bottom-8.right-8.corner-accent::after { bottom: -4px; right: -4px; }
+        /* Removed yellow square spots (.corner-accent::after) */
 
         @keyframes fade-in {
             from { opacity: 0; transform: translateY(15px); }

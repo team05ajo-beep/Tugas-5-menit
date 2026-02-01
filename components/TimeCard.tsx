@@ -12,13 +12,7 @@ const TimeCard: React.FC<TimeDisplayProps> = ({ label, time, isActive = false })
         {time}
       </span>
       
-      {/* Decorative pulse element */}
-      {isActive && (
-        <div className="absolute top-6 right-6">
-          <div className="w-2 h-2 bg-[#d4af37] rounded-full animate-ping"></div>
-          <div className="absolute inset-0 w-2 h-2 bg-[#d4af37] rounded-full"></div>
-        </div>
-      )}
+      {/* Decorative pulse element removed as requested */}
       
       <div className="absolute inset-0 bg-gradient-to-br from-white/40 to-transparent pointer-events-none"></div>
     </div>

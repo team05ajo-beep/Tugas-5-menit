@@ -66,7 +66,7 @@ const App: React.FC = () => {
         {/* Subtle Light Gradient Vignette */}
         <div className="absolute inset-0 bg-gradient-to-b from-white/50 via-transparent to-white/70 pointer-events-none"></div>
 
-        {/* Corner Accents - Solid Black for visibility */}
+        {/* Corner Accents - Border maintained, yellow spots removed via index.html CSS */}
         <div className="absolute top-10 left-10 corner-accent z-20 border-black/20"></div>
         <div className="absolute top-10 right-10 corner-accent z-20 border-black/20"></div>
         <div className="absolute bottom-10 left-10 corner-accent z-20 border-black/20"></div>
@@ -80,7 +80,7 @@ const App: React.FC = () => {
           <p className="text-[12px] tracking-[0.3em] text-black/80 font-black uppercase">FIORI EST 1975</p>
           <div className="pt-8">
             <h2 className="text-sm md:text-base tracking-[0.4em] text-[#7a610f] font-black uppercase drop-shadow-sm">
-              WAKTU TUGAS
+              WAKTU PEKERJAAN
             </h2>
           </div>
         </div>
@@ -122,11 +122,7 @@ const App: React.FC = () => {
               ></div>
             </div>
             
-            <div className="mt-8 flex gap-5">
-              <div className="w-2 h-2 bg-[#d4af37]/50 rounded-full animate-pulse"></div>
-              <div className="w-2 h-2 bg-[#d4af37] rounded-full animate-pulse [animation-delay:-0.2s]"></div>
-              <div className="w-2 h-2 bg-[#d4af37]/50 rounded-full animate-pulse [animation-delay:-0.4s]"></div>
-            </div>
+            {/* Removed the three yellow pulse dots from here to satisfy "hilangkan bintik kuning" */}
           </div>
         </div>
 
@@ -134,12 +130,12 @@ const App: React.FC = () => {
         <div className="z-10 w-full max-w-xl text-center px-4 mb-4">
           <div className="mb-4">
             <span className="text-[12px] font-black tracking-[0.2em] text-[#8b6d11] uppercase border-b-2 border-[#d4af37] pb-1.5 px-6">
-              PROSES TUGAS
+              PROSES PEKERJAAN
             </span>
           </div>
           <div className="relative bg-white/60 backdrop-blur-md p-5 rounded-2xl border-2 border-white shadow-xl shadow-black/5">
             <p className="text-[11px] md:text-[12px] leading-[2.2] tracking-[0.1em] text-black font-black uppercase text-center max-w-lg mx-auto">
-              TUGAS AKAN DI PROSES SECARA OTOMATIS. PENGGUNA HANYA PERLU MENUNGGU DI DALAM "AKUN KERJA" SAMPAI PROSES TUGAS SELESAI SESUAI DENGAN WAKTU YANG DITENTUKAN OLEH SISTEM
+              PEKERJAAN AKAN DI PROSES SECARA OTOMATIS. PENGGUNA HANYA PERLU MENUNGGU DI DALAM "AKUN KERJA" SAMPAI PROSES PEKERJAAN SELESAI SESUAI DENGAN WAKTU YANG DITENTUKAN OLEH SISTEM
             </p>
           </div>
         </div>
