@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Task Timer - Armani Fiori</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f9f9f7;
+            color: #1a1a1a;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .gold-text {
+            color: #b8860b;
+            background: linear-gradient(to bottom, #d4af37 0%, #a67c00 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-glow {
+            filter: drop-shadow(0 0 8px rgba(184, 134, 11, 0.3));
+        }
+        .corner-accent {
+            width: 45px;
+            height: 45px;
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 4px;
+        }
+        .corner-accent::after {
+            content: '';
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            background: #d4af37;
+            border-radius: 1px;
+            opacity: 0.6;
+        }
+        .top-8.left-8.corner-accent::after { top: -4px; left: -4px; }
+        .top-8.right-8.corner-accent::after { top: -4px; right: -4px; }
+        .bottom-8.left-8.corner-accent::after { bottom: -4px; left: -4px; }
+        .bottom-8.right-8.corner-accent::after { bottom: -4px; right: -4px; }
+
+        @keyframes fade-in {
+            from { opacity: 0; transform: translateY(15px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in {
+            animation: fade-in 1s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "date-fns": "https://esm.sh/date-fns@^4.1.0",
+    "html2canvas": "https://esm.sh/html2canvas@^1.4.1",
+    "vite": "https://esm.sh/vite@^7.3.1",
+    "@vitejs/plugin-react": "https://esm.sh/@vitejs/plugin-react@^5.1.2"
+  }
+}
+</script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+</body>
+</html>
